@@ -6,7 +6,7 @@
 
 - 🗒️ Template do overleaf adaptado e criado para atender ao componente curricular Extensão como Metodologia de Ensino I - BRAEXT1 do Curso Análise e Desenvolvimento de Sistemas (ADS) no Instituto Federal de Educação, Ciência e Tecnologia (IFSP), no campus de Bragança Paulista (BRA). 
 
-- 📖 Para ter uma leitura agradável, efetue o _download_ do repositório e efetue o upload do arquivo .zip na plataforma do overleaf.com.
+- 📖 Para ter uma leitura agradável, efetue o _download_ do repositório e efetue o upload do arquivo .zip na plataforma do <a href="https://www.overleaf.com/">overleaf.com</a>.
 
 - 📤 Qualquer eventual dúvida, entre em contato por e-mail: _paulagiancoli@ifsp.edu.br_.
 
