@@ -1,0 +1,239 @@
+% Adaptado para IFSP-BRA por Profa. Dra. Ana Paula Müller Giancoli - 27/05/2023
+
+% Não modificar - inicio
+% -- Classe Documento
+\documentclass[
+	% -- opções da classe memoir --
+	hidelinks,
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em verso e anverso. Oposto a oneside, twoside
+	a4paper,			% tamanho do papel. 
+	%normalfigtabnum,
+	%pnumromarab,
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil,				% o último idioma é o principal do documento
+]{abntex2}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+% --
+\usepackage[document]{ragged2e}
+% ---
+% Pacotes básicos 
+% ---
+% Usa a fonte Helvet que é parecida com Arial
+\usepackage{helvet} 
+% define como default.
+\renewcommand{\familydefault}{\sfdefault} 
+% Selecao de codigos de fonte.
+\usepackage[T1]{fontenc}	
+% Codificacao do documento (conversão automática dos acentos)
+\usepackage[utf8]{inputenc}	
+% Usado pela Ficha catalográfica
+\usepackage{lastpage}	
+% Indenta o primeiro parágrafo de cada seção.
+\usepackage{indentfirst}		
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\captionstyle{\center} %(para as legendas; use \legend para fonte)
+\usepackage{caption}
+\usepackage{hyperref}
+
+
+
+% ---
+% Pacotes de citações
+% ---
+% Paginas com as citações na bibl
+\usepackage[brazilian,hyperpageref]{backref}
+% Citações padrão ABNT
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-text=emph]{abntex2cite}  
+
+
+% -- 
+% Pacote para moldura
+% --
+% Adicionado para criar uma moldura ao redor da página
+\usepackage{fancybox} 
+% incluído a moldura da página
+\fancypage{\setlength{\fboxsep}{12pt}\fbox}{} 
+\usepackage{wrapfig}
+%--
+% comando para inserir autor e ano
+\newcommand{\citeauthorandyear}[1]{\citeauthoronline{#1} (\citeyear{#1})}
+\renewcommand{\ABNTEXchapterfontsize}{\bfseries\large}
+% https://www.tablesgenerator.com/
+\usepackage{float}
+\floatstyle{plaintop} % Coloca caption no topo
+\newfloat{quadro}{htbp}{lop}
+\floatname{quadro}{Quadro}
+\newcommand{\listofquadros}{\listof{quadro}{Lista de Quadros}}
+\renewcommand{\baselinestretch}{1.5}
+
+% --
+% Autores
+% --
+\newcommand{\autorA}[1]{\def \oautorA {#1}}
+\newcommand{\imprimirautorA}{\oautorA}
+\newcommand{\prontuarioA}[1]{\def \oprontuarioA {#1}}
+\newcommand{\imprimirprontuarioA}{\oprontuarioA}
+
+\newcommand{\autorB}[1]{\def \oautorB {#1}}
+\newcommand{\imprimirautorB}{\oautorB}
+\newcommand{\prontuarioB}[1]{\def \oprontuarioB {#1}}
+\newcommand{\imprimirprontuarioB}{\oprontuarioB}
+
+\newcommand{\autorC}[1]{\def \oautorC {#1}}
+\newcommand{\imprimirautorC}{\oautorC}
+\newcommand{\prontuarioC}[1]{\def \oprontuarioC {#1}}
+\newcommand{\imprimirprontuarioC}{\oprontuarioC}
+
+\newcommand{\autorD}[1]{\def \oautorD {#1}}
+\newcommand{\imprimirautorD}{\oautorD}
+\newcommand{\prontuarioD}[1]{\def \oprontuarioD {#1}}
+\newcommand{\imprimirprontuarioD}{\oprontuarioD}
+
+\newcommand{\prof}[1]{\def \prof {#1}}
+\newcommand{\imprimirprof}{\oprof}
+
+\prof{Prof. Me. Rafael da Silva Muniz}
+\titulo{Projeto de Extensão | Módulo 1 | 2023-01 }
+
+% Não modificar - fim
+
+% -- 
+% -- 
+% -- Atualizar a partir deste ponto
+% -- 
+% -- 
+
+
+% -- Inserir sempre os nomes dos alunos em ordem alfabética
+% ----- Caso não tenha mais alunos, basta inserir o símbolo % no início da linha  de \prontuarioB{}, \autorB{}, \prontuarioC{}, \autorC{}, \prontuarioD{}, \autorD{}
+
+% Aluno A
+\prontuarioA{BP9999999}
+\autorA{Nome do autor A}
+% Aluno B
+\prontuarioB{BP9999999}
+\autorB{Nome do autor B}
+% Aluno C
+\prontuarioC{BP9999999}
+\autorC{Nome do autor C}
+% Aluno D
+\prontuarioD{BP9999999}
+\autorD{Nome do autor D}
+% ----
+
+% -- 
+% -- 
+% -- Atualizar até aqui
+% -- 
+% -- 
+
+% --
+% Inicio do Documento
+% --
+
+% --
+% -- Não modificar - inicio 
+% --
+
+\begin{document}
+\selectlanguage{brazil}
+%\thispagestyle{empty} % remove a numeração desta página
+\textual
+
+\begin{wrapfigure}[2]{l}{0.30\textwidth}
+\includegraphics[scale=.35]{imagens/IFSP-BRA.png} 
+\end{wrapfigure}
+
+\centering
+\footnotesize\textbf{Tecnologia em Análise e Desenvolvimento de Sistemas} \\	\footnotesize\textbf{Extensão como Metodologia de Ensino I - BRAEXT1} \\ 
+
+\begin{center}
+\vspace{1cm}
+    \normalsize \textbf{\imprimirtitulo}
+\end{center}
+
+\begin{flushright}
+    \prof
+\end{flushright}
+
+\begin{flushleft}
+    \small \textbf{1. COMPOSIÇÃO DO GRUPO DE TRABALHO}
+\end{flushleft}
+\begin{center}
+	\begin{tabular}{|m{0.5cm}|m{4cm}|m{10cm}|}
+		\hline 
+	    \textbf{n$^o$.} & \multicolumn{2}{c|}{\textbf{Prontuário | Nome do aluno}} \\
+		\hline
+		\textbf{1} & \textit{\imprimirprontuarioA} & \textit{\imprimirautorA}\\
+		\hline
+		\textbf{2} & \textit{\imprimirprontuarioB} & \textit{\imprimirautorB}\\
+		\hline
+		\textbf{3} & \textit{\imprimirprontuarioC} & \textit{\imprimirautorC}\\
+		\hline
+        \textbf{4} & \textit{\imprimirprontuarioD} & \textit{\imprimirautorD}\\
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{flushleft}
+   \normalsize\textbf{2.TÍTULO E PROPOSTA DO PROJETO}
+\end{flushleft}
+
+\begin{flushleft}
+   \small \textbf{Tema do Projeto:}
+\end{flushleft} 
+\normalsize
+% -- 
+% --- Alterar o Título do Projeto, se necessário:
+Portal de demandas externas\\
+
+
+\begin{flushleft}
+\textbf{Elementos obrigatórios: }
+\end{flushleft} 
+% --- Para inserir o problema de pesquisa, localize o arquivo e altere
+\input{includes/elementosobrig}
+
+\vspace{1cm}
+
+\begin{center}
+	\begin{tabular}{|m{10cm}|m{5cm}|}
+		\hline
+		\textbf{Alunos} & \textbf{Assinatura} \\
+		\hline
+		 \textit{\imprimirprontuarioA - \imprimirautorA} &  \\
+		\hline
+		\textit{\imprimirprontuarioB - \imprimirautorB} &  \\
+		\hline
+		\textit{\imprimirprontuarioC - \imprimirautorC} & \\
+		\hline
+         \textit{\imprimirprontuarioD - \imprimirautorD} & \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{flushright}
+   Data: \today.
+\end{flushright}
+
+\end{document}
+% --
+% -- Não modificar - fim
+% --
+
